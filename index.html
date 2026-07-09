@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Iffan Muromae | Portfolio</title>
+    <link rel="stylesheet" href="styles.css?v=20260709b">
+    <title>Iffan Muromae | พอร์ตโฟลิโอ</title>
 </head>
 
 <body>
@@ -15,13 +15,14 @@
     <nav class="navbar glass-effect">
         <div class="navbar-container">
             <div class="logo-container">
-                <a href="#"><span class="gradient-text">PORTFOLIO</span></a>
+                <a href="#"><span class="gradient-text">พอร์ตโฟลิโอ</span></a>
             </div>
             <div class="nav-links">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link active">หน้าแรก</a>
+                <a href="#about" class="nav-link">เกี่ยวกับฉัน</a>
+                <a href="#skills" class="nav-link">ทักษะ</a>
+                <a href="#projects" class="nav-link">ผลงาน</a>
+                <a href="#contact" class="nav-link">ติดต่อ</a>
             </div>
         </div>
     </nav>
@@ -30,22 +31,22 @@
     <div class="home-content">
         <div id="home" class="home fade-in-section">
             <div class="home-text">
-                <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-secondary);">HI, I'M</p>
+                <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-secondary);">สวัสดีครับ ผมชื่อ</p>
                 <h1><span class="gradient-text">Iffan Muromae</span></h1>
-                <h2>Web Developer & Student</h2>
+                <h2>นักพัฒนาเว็บไซต์ & นักศึกษา</h2>
                 <p class="discription">
-                    I'm a dedicated student passionate about web development. 
-                    I transform ideas into modern, responsive, and aesthetically pleasing websites.
+                    ผมเป็นนักศึกษาที่มีความมุ่งมั่นและหลงใหลในการพัฒนาเว็บไซต์
+                    ผมเปลี่ยนไอเดียให้กลายเป็นเว็บไซต์ที่ทันสมัย รองรับทุกอุปกรณ์ และสวยงามน่าใช้งาน
                 </p>
 
                 <div class="home-button">
-                    <a href="#projects" class="btn bt-1">View Work</a>
-                    <a href="#contact" class="btn bt-2">Contact Me</a>
+                    <a href="#projects" class="btn bt-1">ดูผลงาน</a>
+                    <a href="#contact" class="btn bt-2">ติดต่อฉัน</a>
                 </div>
             </div>
 
             <div class="home-photo">
-                <img src="image/111.jpg" alt="Iffan Profile">
+                <img src="image/111.jpg" alt="รูปโปรไฟล์ Iffan">
             </div>
         </div>
     </div>
@@ -54,38 +55,77 @@
     <div id="about" class="about-content fade-in-section">
         <div class="about glass-card">
             <div class="about-photo">
-                <img src="image/MSJ08013.jpg" alt="About Iffan">
+                <img src="image/MSJ08013.jpg" alt="รูปเกี่ยวกับ Iffan">
             </div>
 
             <div class="about-text">
                 <div class="text-haeder">
-                    <h1>About <span class="gradient-text">Me</span></h1>
+                    <h1>เกี่ยวกับ<span class="gradient-text">ฉัน</span></h1>
                 </div>
-                
+
                 <div class="about-info-grid">
                     <div class="info-item">
-                        <h3>Name</h3>
+                        <h3>ชื่อ</h3>
                         <p>Iffan Muromae</p>
                     </div>
                     <div class="info-item">
-                        <h3>Age</h3>
-                        <p>18 Years Old</p>
+                        <h3>อายุ</h3>
+                        <p>18 ปี</p>
                     </div>
                     <div class="info-item">
-                        <h3>Birthday</h3>
-                        <p>31 July 2007</p>
+                        <h3>วันเกิด</h3>
+                        <p>31 กรกฎาคม 2007</p>
                     </div>
                     <div class="info-item">
-                        <h3>Location</h3>
-                        <p>Thailand</p>
+                        <h3>ที่อยู่</h3>
+                        <p>ประเทศไทย</p>
                     </div>
                 </div>
 
                 <div style="margin-top: 2rem;">
                     <p style="color: var(--text-secondary);">
-                        Currently studying and expanding my knowledge in Full Stack Development.
-                        I love creating user-friendly interfaces and robust backends.
+                        ปัจจุบันกำลังศึกษาและเพิ่มพูนความรู้ด้าน Full Stack Development
+                        ผมชื่นชอบการสร้างสรรค์อินเทอร์เฟซที่ใช้งานง่าย ควบคู่กับระบบหลังบ้านที่แข็งแรง
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills / Tech Stack Section -->
+    <div id="skills" class="skills-content fade-in-section">
+        <div class="skills glass-card">
+            <div class="text-haeder">
+                <h1>เทคโนโลยี<span class="gradient-text">ที่ใช้งาน</span></h1>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img class="skill-icon" src="https://skillicons.dev/icons?i=html" alt="HTML5" loading="lazy">
+                    <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-icon" src="https://skillicons.dev/icons?i=css" alt="CSS3" loading="lazy">
+                    <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-icon" src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" loading="lazy">
+                    <span class="skill-name">Tailwind CSS</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-icon" src="https://skillicons.dev/icons?i=js" alt="JavaScript" loading="lazy">
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-icon" src="https://skillicons.dev/icons?i=react" alt="React" loading="lazy">
+                    <span class="skill-name">React</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-icon" src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" loading="lazy">
+                    <span class="skill-name">Next.js</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-icon" src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" loading="lazy">
+                    <span class="skill-name">Node.js</span>
                 </div>
             </div>
         </div>
@@ -95,43 +135,158 @@
     <div id="projects" class="projects-content">
         <div class="projects fade-in-section">
             <div class="projects-haeder">
-                <h1>My <span class="gradient-text">Projects</span></h1>
-                <p style="color: var(--text-secondary); margin-top: 10px;">Here are some of my recent works.</p>
+                <h1>ผลงาน<span class="gradient-text">ของฉัน</span></h1>
+                <p style="color: var(--text-secondary); margin-top: 10px;">รวมผลงานตัดต่อ ถ่ายหนัง งานอดิเรก และงานเว็บแอป ที่ทำมาตลอดช่วงที่ผ่านมา</p>
             </div>
 
-            <div class="projects-grid">
-                <!-- Project Card 1 -->
-                <div class="project-card glass-card">
-                    <h2 class="gradient-text">Portfolio Website</h2>
-                    <p style="margin: 1rem 0; color: var(--text-secondary);">The website you are currently viewing. Built with modern CSS and Glassmorphism.</p>
-                    <a href="#" class="btn bt-2" style="padding: 8px 20px; font-size: 0.9rem;">View Code</a>
+            <!-- Category: Video Editing -->
+            <div class="project-category">
+                <div class="category-header">
+                    <span class="cat-icon"></span>
+                    <h3>ผลงานการตัดต่อวิดีโอ</h3>
                 </div>
-
-                <!-- Project Card 2 (Placeholder) -->
-                <div class="project-card glass-card">
-                    <h2 class="gradient-text">E-Commerce UI</h2>
-                    <p style="margin: 1rem 0; color: var(--text-secondary);">A modern shop interface design with cart functionality.</p>
-                    <a href="#" class="btn bt-2" style="padding: 8px 20px; font-size: 0.9rem;">Coming Soon</a>
+                <div class="projects-grid">
+                    <div class="project-card glass-card">
+                        <img class="project-card-img" src="image/work-video1.jpg" alt="ปกผลงานโปรเจกต์ภาพยนตร์ครั้งแรก">
+                        <div class="project-meta"><span class="platform-tag">Facebook</span><span class="project-date">29 พ.ค. 2025</span></div>
+                        <h2 class="gradient-text">โปรเจกต์ภาพยนตร์ครั้งแรก</h2>
+                        <p>โปรเจกต์ตัดต่อขนาดใหญ่ชิ้นแรกที่ทำได้ดีเกินคาด ทำงานร่วมกับทีมกล้อง เตรียมงานฝั่งโปรดักชันเต็ม 1 เดือน</p>
+                        <a href="https://www.facebook.com/share/p/18zwmKyXcX/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
+                    <div class="project-card glass-card">
+                        <img class="project-card-img" src="image/work-sukanjaya.jpg" alt="ปกผลงาน SUKAN JAYA 2024">
+                        <div class="project-meta"><span class="platform-tag">Facebook</span><span class="project-date">21 ก.ย. 2024</span></div>
+                        <h2 class="gradient-text">SUKAN JAYA 2024 Ep.1</h2>
+                        <p>คลิปไฮไลต์ตัดต่อกิจกรรมกีฬาสี Sukan Jaya 2024</p>
+                        <a href="https://www.facebook.com/share/p/1949WvYumX/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-meta"><span class="platform-tag">Instagram</span><span class="project-date">20 พ.ค. 2026</span></div>
+                        <h2 class="gradient-text">Timeline แปรอักษร G.42</h2>
+                        <p>วิดีโอไทม์ไลน์บันทึกการซ้อมและแปรอักษรของรุ่น G.42</p>
+                        <a href="https://www.instagram.com/p/DYjlqXSkcSQ/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-meta"><span class="platform-tag">Instagram</span><span class="project-date">11 มิ.ย. 2025</span></div>
+                        <h2 class="gradient-text">Behind The Scene</h2>
+                        <p>คลิปเบื้องหลังการถ่ายทำงานโปรดักชัน</p>
+                        <a href="https://www.instagram.com/reel/DKw6EdKvrWK/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-meta"><span class="platform-tag">Facebook</span></div>
+                        <h2 class="gradient-text">ผลงานตัดต่อวิดีโอ</h2>
+                        <p>อีกหนึ่งผลงานตัดต่อวิดีโอ ชมคลิปเต็มได้ที่โพสต์ต้นฉบับ</p>
+                        <a href="https://www.facebook.com/share/v/1ETeU6RbUy/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
                 </div>
+            </div>
 
-                <!-- Project Card 3 (Placeholder) -->
-                <div class="project-card glass-card">
-                    <h2 class="gradient-text">Task Manager</h2>
-                    <p style="margin: 1rem 0; color: var(--text-secondary);">A productivity app to manage daily tasks efficiently.</p>
-                    <a href="#" class="btn bt-2" style="padding: 8px 20px; font-size: 0.9rem;">Coming Soon</a>
+            <!-- Category: Filmmaking -->
+            <div class="project-category">
+                <div class="category-header">
+                    <span class="cat-icon"></span>
+                    <h3>ผลงานการทำหนัง</h3>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card glass-card">
+                        <img class="project-card-img" src="image/work-glabban.jpg" alt="ปกภาพยนตร์กลับบ้านไหม">
+                        <div class="project-meta"><span class="platform-tag">Facebook</span><span class="project-date">18 มี.ค. 2026</span></div>
+                        <h2 class="gradient-text">กลับบ้านไหม</h2>
+                        <p>ภาพยนตร์สั้น รับหน้าที่ DOP / Camera Operator ร่วมกับทีมงานสร้างภาพ</p>
+                        <a href="https://www.facebook.com/share/p/1BYxj1jAsH/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
+                    <div class="project-card glass-card">
+                        <img class="project-card-img" src="image/work-loop.jpg" alt="ปกภาพยนตร์ LOOP">
+                        <div class="project-meta"><span class="platform-tag">Facebook</span><span class="project-date">14 มี.ค. 2026</span></div>
+                        <h2 class="gradient-text">LOOP</h2>
+                        <p>ภาพยนตร์สั้นภาษามลายูโดย Patanifilm บอกเล่าเรื่องราวชีวิตผู้คนในพื้นที่สามจังหวัดชายแดนใต้ รับหน้าที่ Camera Operator เต็มเรื่อง</p>
+                        <a href="https://www.facebook.com/share/p/1Yj8LeUYH5/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-meta"><span class="platform-tag">Instagram</span><span class="project-date">17 มี.ค. 2026</span></div>
+                        <h2 class="gradient-text">ร่วมงานทีมงานสร้างภาพ</h2>
+                        <p>ร่วมกองถ่ายทำภาพยนตร์กับทีมงานสร้างภาพอีกครั้ง #ทีมงานสร้างภาพ</p>
+                        <a href="https://www.instagram.com/p/DV_Q3uNEaPO/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Hobby -->
+            <div class="project-category">
+                <div class="category-header">
+                    <span class="cat-icon"></span>
+                    <h3>งานอดิเรก</h3>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card glass-card">
+                        <div class="project-meta"><span class="platform-tag">Facebook</span><span class="project-date">27 ก.พ. 2026</span></div>
+                        <h2 class="gradient-text">Homelab & Networking</h2>
+                        <p>งานอดิเรกด้านระบบเครือข่าย ตั้ง File Server จากคอมพิวเตอร์เก่าด้วย Ubuntu ไว้เก็บภาพและข้อมูลของชมรม</p>
+                        <a href="https://www.facebook.com/share/p/1CM124er5a/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-meta"><span class="platform-tag">Instagram</span><span class="project-date">20 พ.ค. 2026</span></div>
+                        <h2 class="gradient-text">กิจกรรมแปรอักษรโรงเรียน</h2>
+                        <p>บันทึกช่วงเวลาการซ้อมแปรอักษรของรุ่น G.42 เป็นความทรงจำนอกเวลาเรียน</p>
+                        <a href="https://www.instagram.com/p/DYjlqXSkcSQ/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-meta"><span class="platform-tag">Instagram</span><span class="project-date">18 เม.ย. 2026</span></div>
+                        <h2 class="gradient-text">เปิดรับงานถ่ายวิดีโอ</h2>
+                        <p>รับงานถ่ายทำวิดีโอในสไตล์ครีเอทีฟนอกเวลาเรียน</p>
+                        <a href="https://www.instagram.com/reel/DXR-qo8gf2T/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-meta"><span class="platform-tag">Instagram</span><span class="project-date">31 ส.ค. 2025</span></div>
+                        <h2 class="gradient-text">FPV Drone Shot</h2>
+                        <p>ถ่ายภาพมุมสูงด้วยโดรน FPV (Avata 2) โหมด Manual พร้อมกล้อง Sony ZV-E10 บันทึกเบื้องหลัง</p>
+                        <a href="https://www.instagram.com/reel/DOBeCLNkuJv/" target="_blank" rel="noopener noreferrer" class="btn bt-2">ดูโพสต์ต้นฉบับ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Web App -->
+            <div class="project-category">
+                <div class="category-header">
+                    <span class="cat-icon"></span>
+                    <h3>ผลงานการทำเว็บแอป</h3>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card glass-card">
+                        <div class="project-card-logo"><img src="image/plop-logo.png" alt="โลโก้ Plop"></div>
+                        <div class="project-meta"><span class="platform-tag">Live</span><span class="project-date">app-plop.com</span></div>
+                        <h2 class="gradient-text">Plop - ปลอบ</h2>
+                        <p>แพลตฟอร์มเยียวยาจิตใจ พื้นที่ปลอดภัยสำหรับระบายความรู้สึก ตรวจสอบสุขภาพจิต และรับแรงบันดาลใจ</p>
+                        <a href="https://app-plop.com/" target="_blank" rel="noopener noreferrer" class="btn bt-2">เยี่ยมชมเว็บแอป</a>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-meta"><span class="platform-tag">Live</span></div>
+                        <h2 class="gradient-text">เว็บไซต์พอร์ตโฟลิโอนี้</h2>
+                        <p>เว็บไซต์ที่คุณกำลังดูอยู่นี้ สร้างด้วย CSS สมัยใหม่และดีไซน์แบบ Glassmorphism</p>
+                        <a href="#" class="btn bt-2">ดูโค้ด</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Contact/Footer Section -->
-    <div id="contact" style="padding: 50px 0; text-align: center; background: rgba(0,0,0,0.2);">
-        <h2 style="margin-bottom: 1rem;">Let's <span class="gradient-text">Connect</span></h2>
-        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Feel free to reach out for collaborations or just a friendly hello!</p>
-        <a href="mailto:iffan@example.com" class="btn bt-1">Email Me</a>
-        
-        <footer style="margin-top: 50px; color: rgba(255,255,255,0.3); font-size: 0.9rem;">
-            &copy; 2026 Iffan Muromae. All Rights Reserved.
+    <div id="contact" style="padding: 50px 0; text-align: center; background: rgba(37,52,63,0.06);">
+        <h2 style="margin-bottom: 1rem;">มา<span class="gradient-text">เชื่อมต่อ</span>กัน</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">ยินดีติดต่อพูดคุยเรื่องงานหรือทักทายกันได้เสมอครับ!</p>
+        <a href="mailto:iffan@example.com" class="btn bt-1">ส่งอีเมลหาฉัน</a>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/iffan.muromae" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.987C18.343 21.128 22 16.991 22 12z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/ifqnz/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.256 1.216.6 1.772 1.153.5.5.888 1.11 1.153 1.772.248.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.217 1.79-.465 2.428a4.883 4.883 0 01-1.153 1.772c-.5.5-1.11.888-1.772 1.153-.637.248-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.217-2.428-.465a4.883 4.883 0 01-1.772-1.153 4.883 4.883 0 01-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428A4.883 4.883 0 013.678 3.678 4.883 4.883 0 015.45 2.525c.637-.248 1.363-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 1.802c-2.67 0-2.986.01-4.04.059-.976.045-1.505.207-1.858.344-.467.181-.8.398-1.15.748-.35.35-.567.683-.748 1.15-.137.353-.3.882-.344 1.858-.05 1.054-.059 1.37-.059 4.04 0 2.67.01 2.986.059 4.04.045.976.207 1.505.344 1.858.181.467.399.8.748 1.15.35.35.683.567 1.15.748.353.137.882.3 1.858.344 1.054.05 1.37.059 4.04.059 2.67 0 2.987-.01 4.04-.059.976-.045 1.505-.207 1.858-.344.467-.181.8-.399 1.15-.748.35-.35.567-.683.748-1.15.137-.353.3-.882.344-1.858.05-1.054.059-1.37.059-4.04 0-2.67-.01-2.986-.059-4.04-.045-.976-.207-1.505-.344-1.858a3.09 3.09 0 00-.748-1.15 3.09 3.09 0 00-1.15-.748c-.353-.137-.882-.3-1.858-.344-1.053-.05-1.37-.059-4.04-.059zm0 4.595a5.603 5.603 0 110 11.206 5.603 5.603 0 010-11.206zm0 1.802a3.801 3.801 0 100 7.602 3.801 3.801 0 000-7.602zm5.72-2.001a1.31 1.31 0 110 2.62 1.31 1.31 0 010-2.62z"/></svg>
+            </a>
+        </div>
+
+        <footer style="margin-top: 50px; color: rgba(37,52,63,0.5); font-size: 0.9rem;">
+            &copy; 2026 Iffan Muromae สงวนลิขสิทธิ์
         </footer>
     </div>
 
