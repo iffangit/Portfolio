@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Iffan Muromae | Portfolio</title>
+</head>
+
+<body>
+
+    <nav class="navbar glass-effect">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href="#"><span class="gradient-text">PORTFOLIO</span></a>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="home-content">
+        <div id="home" class="home fade-in-section">
+            <div class="home-text">
+                <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-secondary);">HI, I'M</p>
+                <h1><span class="gradient-text">Iffan Muromae</span></h1>
+                <h2>Web Developer & Student</h2>
+                <p class="discription">
+                    I'm a dedicated student passionate about web development. 
+                    I transform ideas into modern, responsive, and aesthetically pleasing websites.
+                </p>
+
+                <div class="home-button">
+                    <a href="#projects" class="btn bt-1">View Work</a>
+                    <a href="#contact" class="btn bt-2">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="home-photo">
+                <img src="image/111.jpg" alt="Iffan Profile">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about-content fade-in-section">
+        <div class="about glass-card">
+            <div class="about-photo">
+                <img src="image/MSJ08013.jpg" alt="About Iffan">
+            </div>
+
+            <div class="about-text">
+                <div class="text-haeder">
+                    <h1>About <span class="gradient-text">Me</span></h1>
+                </div>
+                
+                <div class="about-info-grid">
+                    <div class="info-item">
+                        <h3>Name</h3>
+                        <p>Iffan Muromae</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Age</h3>
+                        <p>18 Years Old</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Birthday</h3>
+                        <p>31 July 2007</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Location</h3>
+                        <p>Thailand</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <p style="color: var(--text-secondary);">
+                        Currently studying and expanding my knowledge in Full Stack Development.
+                        I love creating user-friendly interfaces and robust backends.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="projects-content">
+        <div class="projects fade-in-section">
+            <div class="projects-haeder">
+                <h1>My <span class="gradient-text">Projects</span></h1>
+                <p style="color: var(--text-secondary); margin-top: 10px;">Here are some of my recent works.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card glass-card">
+                    <h2 class="gradient-text">Portfolio Website</h2>
+                    <p style="margin: 1rem 0; color: var(--text-secondary);">The website you are currently viewing. Built with modern CSS and Glassmorphism.</p>
+                    <a href="#" class="btn bt-2" style="padding: 8px 20px; font-size: 0.9rem;">View Code</a>
+                </div>
+
+                <!-- Project Card 2 (Placeholder) -->
+                <div class="project-card glass-card">
+                    <h2 class="gradient-text">E-Commerce UI</h2>
+                    <p style="margin: 1rem 0; color: var(--text-secondary);">A modern shop interface design with cart functionality.</p>
+                    <a href="#" class="btn bt-2" style="padding: 8px 20px; font-size: 0.9rem;">Coming Soon</a>
+                </div>
+
+                <!-- Project Card 3 (Placeholder) -->
+                <div class="project-card glass-card">
+                    <h2 class="gradient-text">Task Manager</h2>
+                    <p style="margin: 1rem 0; color: var(--text-secondary);">A productivity app to manage daily tasks efficiently.</p>
+                    <a href="#" class="btn bt-2" style="padding: 8px 20px; font-size: 0.9rem;">Coming Soon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact/Footer Section -->
+    <div id="contact" style="padding: 50px 0; text-align: center; background: rgba(0,0,0,0.2);">
+        <h2 style="margin-bottom: 1rem;">Let's <span class="gradient-text">Connect</span></h2>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Feel free to reach out for collaborations or just a friendly hello!</p>
+        <a href="mailto:iffan@example.com" class="btn bt-1">Email Me</a>
+        
+        <footer style="margin-top: 50px; color: rgba(255,255,255,0.3); font-size: 0.9rem;">
+            &copy; 2026 Iffan Muromae. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

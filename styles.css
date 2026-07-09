@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    /* Color Palette */
+    --primary-gradient: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+    --secondary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --bg-gradient: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --accent-color: #FFD700;
+    
+    /* Spacing & Layout */
+    --navbar-height: 80px;
+    --container-width: 1100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background: var(--bg-gradient);
+    background-attachment: fixed; /* Parallax effect for bg */
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #FF6B6B, #FFE66D);
+    border-radius: 5px;
+}
+
+/* Typography Utilities */
+.gradient-text {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* Glassmorphism Utilities */
+.glass-effect {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--navbar-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(15, 32, 39, 0.85); /* Matches bg-gradient dark tone */
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: var(--container-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 300;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: var(--primary-gradient);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--text-primary);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+/* Home Section */
+.home-content {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--navbar-height);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: var(--container-width);
+    gap: 2rem;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.home-text h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.home-text .discription {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.home-button {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.bt-1 {
+    background: var(--primary-gradient);
+    color: #1a1a1a;
+    border: none;
+}
+
+.bt-1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 230, 109, 0.3);
+}
+
+.bt-2 {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.bt-2:hover {
+    background: var(--accent-color);
+    color: #1a1a1a;
+}
+
+.home-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.home-photo img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%; /* Circle */
+    border: 5px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 50px rgba(255,255,255,0.1);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* About Section */
+.about-content {
+    padding: 100px 0;
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-photo img {
+    width: 300px;
+    border-radius: 20px;
+    /* Remove grayscale, make it vivid */
+    filter: none; 
+    box-shadow: var(--glass-shadow);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.text-haeder {
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.text-haeder h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.text-haeder::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    bottom: -5px;
+    left: 0;
+    background: var(--secondary-gradient);
+    border-radius: 2px;
+}
+
+.about-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.info-item h3 {
+    color: var(--accent-color);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-item p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Projects Section */
+.projects-content {
+    padding: 100px 0;
+    width: 100%;
+}
+
+.projects {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.projects-haeder {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-haeder h1 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Animations */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .home-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-button {
+        justify-content: center;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text-haeder::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo-container a {
+        font-size: 1.4rem;
+    }
+    
+    .nav-links {
+        display: none; /* Mobile menu implementation usually needs JS, keeping simple for now or need burger */
+    }
+}
